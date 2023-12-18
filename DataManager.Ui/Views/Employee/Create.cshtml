@@ -1,0 +1,88 @@
+﻿@model DataManager.BOL.ViewModel.CreateEmployeeViewModel;
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Empoloyee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Employee" asp-action="Create">
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" required />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" required />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patronymic" class="control-label"></label>
+                <input asp-for="Patronymic" class="form-control"/>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Adress" class="control-label"></label>
+                <input asp-for="Adress" class="form-control" required />
+                <span asp-validation-for="Adress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" required />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" required />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EntryDay" class="control-label"></label>
+                <input asp-for="EntryDay" class="form-control" required />
+                <span asp-validation-for="EntryDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Salary" class="control-label"></label>
+                <input asp-for="Salary" class="form-control" required />
+                <span asp-validation-for="Salary" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Departament_Id" class="control-label">Departament</label>
+                @Html.DropDownListFor(x => x.Departament_Id, new SelectList(Model.departments, "id", "Title"), "-- Select Departament --", new { @class = "form-control" })
+                <span asp-validation-for="Departament_Id" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Position_Id" class="control-label">Position</label>
+                @Html.DropDownListFor(x => x.Position_Id, new SelectList(Model.positions, "id", "Title"), "-- Select Position --", new { @class = "form-control" })
+                <span asp-validation-for="Position_Id" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Company_Id" class="control-label">Company</label>
+                @Html.DropDownListFor(x => x.Company_Id, new SelectList(Model.companies, "id", "Title"), "-- Select Company --", new { @class = "form-control" })
+                <span asp-validation-for="Company_Id" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Employee" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

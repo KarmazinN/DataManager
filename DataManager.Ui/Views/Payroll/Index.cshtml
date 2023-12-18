@@ -1,0 +1,74 @@
+﻿@model DataManager.BOL.ViewModel.TabelInfoViewModel;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Statistics  Page</h1>
+
+<P>Company expenditures on salaries per month</P>
+<table class="table" style="width: 60%">
+    <thead>
+        <tr>
+            <th>
+                id
+            </th>
+            <th>
+                Company Title
+            </th>
+            <th>
+                Required Money
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.сosts)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Company)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalSalary)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<p>The number of employees in each company</p>
+<table class="table" style="width: 60%">
+    <thead>
+        <tr>
+            <th>
+                id
+            </th>
+            <th>
+                Company Title
+            </th>
+            <th>
+                NumberOfEmployees
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.humanResourses)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfEmployees)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

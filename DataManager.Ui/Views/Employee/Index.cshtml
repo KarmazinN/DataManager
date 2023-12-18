@@ -1,0 +1,99 @@
+﻿@model DataManager.BOL.Common.EmployeeSearch
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Employee Search Page</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<form asp-controller="Employee" asp-action="Index" method="get">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="FistName" class="control-label"></label>
+        <input asp-for="FistName" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="control-label"></label>
+        <input asp-for="LastName" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Patronymic</th>
+            <th>Adress</th>
+            <th>Phone</th>
+            <th>BirthDate</th>
+            <th>EntryDay</th>
+            <th>Salary</th>
+            <th>Departament</th>
+            <th>Position</th>
+            <th>Company</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.employees != null)
+        {
+            @foreach (var item in Model.employees)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Patronymic)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Adress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BirthDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EntryDay)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Salary)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Departament)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Position)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-primary" style="width: 70px">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.id" class="btn btn-success" style="width: 70px;">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger" style="width: 70px">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<p><a asp-action="Download" class="btn btn-primary" style="width: 150px">Download txt</a></p>

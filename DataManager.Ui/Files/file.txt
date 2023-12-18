@@ -1,0 +1,16 @@
+1, Elias, Dykins, , 01.01.0001 0:00:00, 01.04.2023 0:00:00, 29875, 503-112-7412, Technical support, Junior, A4 games; 
+2, Goldia, Prinn, , 01.01.0001 0:00:00, 10.01.2023 0:00:00, 46207, 705-407-9149, Sales, Senior, Ubisoft; 
+3, Felix, Bocke, , 01.01.0001 0:00:00, 01.06.2023 0:00:00, 26149, 708-380-2571, Marketing, Middle, A4 games; 
+4, Jeannette, Eagles, , 01.01.0001 0:00:00, 26.12.2022 0:00:00, 44368, 945-115-1387, Technical support, Middle, GSC Game World; 
+5, Lek, Craufurd, , 01.01.0001 0:00:00, 25.05.2023 0:00:00, 41591, 965-921-9608, Technical support, Junior, Ubisoft; 
+6, Marne, Rumsey, , 01.01.0001 0:00:00, 12.01.2023 0:00:00, 28963, 118-429-6185, Sales, Middle, Ubisoft; 
+7, Leonardo, Hackley, , 01.01.0001 0:00:00, 06.03.2023 0:00:00, 58006, 580-424-0178, Technical support, PM, A4 games; 
+8, Bancroft, Connah, , 01.01.0001 0:00:00, 22.10.2023 0:00:00, 58363, 949-807-7165, Technical support, Senior, Ubisoft; 
+9, Jennifer, Creavan, , 01.01.0001 0:00:00, 03.06.2023 0:00:00, 45935, 709-518-4101, Sales, TeamLead, A4 games; 
+10, Jedediah, Rattrie, , 01.01.0001 0:00:00, 15.05.2023 0:00:00, 54165, 669-311-4676, IT, Senior, A4 games; 
+11, Jeanne, Rainger, , 01.01.0001 0:00:00, 13.09.2023 0:00:00, 32491, 196-898-9659, Marketing, TeamLead, A4 games; 
+12, Gleda, Leehane, , 01.01.0001 0:00:00, 31.01.2023 0:00:00, 41531, 441-587-4094, Sales, PM, Ubisoft; 
+13, Aimee, Fripps, , 01.01.0001 0:00:00, 08.03.2023 0:00:00, 56170, 639-419-9380, IT, PM, Ubisoft; 
+14, Daron, Lacky, , 01.01.0001 0:00:00, 03.01.2023 0:00:00, 20462, 127-550-6453, Marketing, Senior, GSC Game World; 
+15, Ethelind, Cleen, , 01.01.0001 0:00:00, 25.08.2023 0:00:00, 48346, 731-939-2890, IT, Middle, Ubisoft; 
+16, FirstName1, LastName1, Patronymic, 01.01.0001 0:00:00, 01.01.2023 0:00:00, 40000, 12464574, IT, Junior, GSC Game World; 

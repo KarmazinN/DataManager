@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataManager.BOL\DataManager.BOL.csproj" />
+    <ProjectReference Include="..\DataManager.DAL\DataManager.DAL.csproj" />
+  </ItemGroup>
+
+</Project>
