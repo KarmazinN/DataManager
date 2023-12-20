@@ -56,20 +56,20 @@
             </div>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Departament_Id" class="control-label">Client</label>
-                @Html.DropDownListFor(x => x.Departament_Id, new SelectList(Model.departments, "id", "Title"), "-- Select Client --", new { @class = "form-control" })
+                <label asp-for="Departament_Id" class="control-label">Departament</label>
+                @Html.DropDownListFor(x => x.Departament_Id, new SelectList(Model.departments, "id", "Title"), "-- Select Departament --", new { @class = "form-control" })
                 <span asp-validation-for="Departament_Id" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="Position_Id" class="control-label">Hotel</label>
-                @Html.DropDownListFor(x => x.Position_Id, new SelectList(Model.positions, "id", "Title"), "-- Select Hotel --", new { @class = "form-control" })
+                <label asp-for="Position_Id" class="control-label">Position</label>
+                @Html.DropDownListFor(x => x.Position_Id, new SelectList(Model.positions, "id", "Title"), "-- Select Position --", new { @class = "form-control" })
                 <span asp-validation-for="Position_Id" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="Company_Id" class="control-label">Tour Package</label>
-                @Html.DropDownListFor(x => x.Company_Id, new SelectList(Model.companies, "id", "Title"), "-- Select Tour Package --", new { @class = "form-control" })
+                <label asp-for="Company_Id" class="control-label">Company</label>
+                @Html.DropDownListFor(x => x.Company_Id, new SelectList(Model.companies, "id", "Title"), "-- Select Company --", new { @class = "form-control" })
                 <span asp-validation-for="Company_Id" class="text-danger"></span>
             </div>
             <br />

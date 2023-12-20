@@ -14,3 +14,4 @@
 14, Daron, Lacky, , 01.01.0001 0:00:00, 03.01.2023 0:00:00, 20462, 127-550-6453, Marketing, Senior, GSC Game World; 
 15, Ethelind, Cleen, , 01.01.0001 0:00:00, 25.08.2023 0:00:00, 48346, 731-939-2890, IT, Middle, Ubisoft; 
 16, FirstName1, LastName1, Patronymic, 01.01.0001 0:00:00, 01.01.2023 0:00:00, 40000, 12464574, IT, Junior, GSC Game World; 
+17, Oleg, LastName, Patronymic, 01.01.0001 0:00:00, 01.01.2023 0:00:00, 60000, 12464574, IT, Senior, Sony; 
